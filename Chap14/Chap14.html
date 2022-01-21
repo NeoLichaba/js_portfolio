@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pizzeria</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Chap14.css'>
+    
+</head>
+<body>
+    <h1>JavaScript Pizzeria</h1>
+
+<div id="orderForm">
+    <label>How many pizzas do you want?
+        <input type="number" id="numPizzas" />
+    </label>
+    <br />
+    <br />
+    <label>What kind of pizzas?
+        <select id="typePizza">
+            <option value="cheese">Magherita</option>
+            <option value="pepperoni">Porky Pig</option>
+            <option value="supreme">Meat Supreme</option>
+        </select>
+    </label>
+    <br />
+    <br />
+    <label>Where do you live?
+        <select id="deliveryCity">
+            <option value="Sunninghill">Sunninghill</option>
+            <option value="Rivonia">Rivonia</option>
+            <option value="Paulshof">Paulshof</option>
+        </select>
+    </label>
+    <br />
+    <br />
+    <label>Is it your birthday?
+        <select id="birthday">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+    </label>
+    <br />
+    <br />
+    <button type="button" id="placeOrder">Place Order</button>
+</div>
+<div id="displayTotal"></div>
+    <script src='Chap14.js'></script>
+</body>
+</html>
