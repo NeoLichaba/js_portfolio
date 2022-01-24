@@ -84,6 +84,19 @@ function continueStory(answerNumber) {
 
             }
             break;
+        case 3:
+                if (answers[3] === "STARVE") {
+                    story.innerHTML = document.getElementById("answer31").innerHTML;
+                    theEnd(1);
+                } else if (answers[2] === "EAT GIZMO") {
+                    story.innerHTML = document.getElementById("answer32").innerHTML;
+                    theEnd();
+                } else {
+                    story.innerHTML = document.getElementById("err3").innerHTML;
+                    theEnd;
+    
+                }
+                break;
         default:
             story.innerHTML = "The story is over!";
 
